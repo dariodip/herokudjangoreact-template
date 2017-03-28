@@ -1,0 +1,34 @@
+{
+  "name": "herokuprova",
+  "version": "1.0.0",
+  "description": "An utterly fantastic project starter template for Django 1.10.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node_modules/webpack/bin/webpack.js",
+    "webpack": "node_modules/webpack/bin/webpack.js --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darioskal/herokuprova.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darioskal/herokuprova/issues"
+  },
+  "homepage": "https://github.com/darioskal/herokuprova#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "jquery": "^3.2.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.3.2",
+    "webpack-bundle-tracker": "^0.2.0"
+  },
+  "dependencies": {
+    "vis": "^4.19.1"
+  }
+}
