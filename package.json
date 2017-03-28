@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "An utterly fantastic project starter template for Django 1.10.",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "node_modules/webpack/bin/webpack.js",
-    "webpack": "node_modules/webpack/bin/webpack.js --progress --colors --watch"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/darioskal/herokuprova.git"
   },
   "author": "",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/webpack --config webpack.config.js"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/darioskal/herokuprova/issues"
