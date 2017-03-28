@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'herokuprova1.wsgi.application'
+WSGI_APPLICATION = 'herokuprova.wsgi.application'
 
 
 # Database
