@@ -9,7 +9,7 @@
   },
   "author": "",
   "scripts": {
-    "postinstall": "./node_modules/.bin/webpack --config webpack.config.js"
+    "postinstall": "webpack --config webpack.config.js"
   },
   "license": "ISC",
   "bugs": {
@@ -25,6 +25,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack": "^2.3.2",
+    "react-graph-vis": "^0.1.1",
     "webpack-bundle-tracker": "^0.2.0"
   },
   "dependencies": {
