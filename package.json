@@ -9,7 +9,7 @@
   },
   "author": "",
   "scripts": {
-    "postinstall": "./node_modules/.bin/webpack --config webpack.config.js"
+    "postinstall": "webpack --config webpack.config.js"
   },
   "license": "ISC",
   "bugs": {
