@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 import dj_database_url
-import threading
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -147,11 +146,3 @@ WEBPACK_LOADER = {
         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
     }
 }
-
-
-def timer():
-    threading.Timer(60.0 * 20, timer).start()
-    print("I cannot sleep")
-
-
-timer()
