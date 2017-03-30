@@ -30,7 +30,7 @@ DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
-    'ddpcurriculum.apps.DdpcurriculumConfig',
+    'curriculum.apps.CurriculumConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'herokuprova.urls'
+ROOT_URLCONF = 'mainapp.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'herokuprova.wsgi.application'
+WSGI_APPLICATION = 'mainapp.wsgi.application'
 
 
 # Database
@@ -133,7 +133,7 @@ STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, 'static'),
-    os.path.join(BASE_DIR, 'ddpcurriculum/assets'),
+    os.path.join(BASE_DIR, 'curriculum/assets'),
 ]
 
 # Simplified static file serving.

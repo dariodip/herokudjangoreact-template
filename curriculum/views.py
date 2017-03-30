@@ -6,4 +6,4 @@ from django.views.generic import TemplateView
 
 
 class IndexView(TemplateView):
-    template_name = "ddpcurriculum/index.html"
+    template_name = "curriculum/index.html"
