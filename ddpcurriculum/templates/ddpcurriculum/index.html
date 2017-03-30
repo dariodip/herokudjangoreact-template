@@ -1,0 +1,17 @@
+{% extends "ddpcurriculum/base.html" %}
+
+{% load render_bundle from webpack_loader %}
+{% load static %}
+
+{% block title %}
+Dario Di Pasquale
+{% endblock %}
+
+{% block main %}
+
+    <div id="container">
+
+    </div>
+    {% render_bundle 'main' %}
+
+{% endblock %}
