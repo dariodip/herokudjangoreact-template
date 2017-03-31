@@ -1,5 +1,5 @@
 {
-  "name": "devcurriculum",
+  "name": "example_app",
   "version": "1.0.0",
   "description": "An utterly fantastic project starter template for Django 1.10.",
   "main": "index.js",
@@ -31,6 +31,5 @@
     "webpack-bundle-tracker": "^0.2.0"
   },
   "dependencies": {
-    "vis": "^4.19.1"
   }
 }
