@@ -22,7 +22,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "=uq=q3cp(k3chy!^yw#(1vp7me+$7(ew#d1o^yk83uxk%0a9qy"
+SECRET_KEY = os.environ['SECRET_VARIABLE']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,7 +30,7 @@ DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
-    'curriculum.apps.CurriculumConfig',
+    'myapp.apps.MyAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,7 +133,7 @@ STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, 'static'),
-    os.path.join(BASE_DIR, 'curriculum/assets'),
+    os.path.join(BASE_DIR, 'myapp/assets'),
 ]
 
 # Simplified static file serving.

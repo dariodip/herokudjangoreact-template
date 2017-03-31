@@ -12,11 +12,11 @@ module.exports = {
     //the entry point we created earlier. Note that './' means
     //your current directory. You don't have to specify the extension  now,
     //because you will specify extensions later in the `resolve` section
-    entry: './curriculum/assets/js/index',
+    entry: './myapp/assets/js/index',
 
     output: {
         //where you want your compiled bundle to be stored
-        path: path.resolve('./curriculum/assets/dist/'),
+        path: path.resolve('./myapp/assets/dist/'),
         //naming convention webpack should use for your files
         filename: '[name]-[hash].js',
     },
