@@ -1,6 +1,8 @@
 # Heroku Django React through Webpack Starter Template
 
-An utterly fantastic project starter template for Django 1.10.
+Heroku said:
+
+`An utterly fantastic project starter template for Django 1.10.`
 
 Moreover I added a standard configuration in order to use [React](https://facebook.github.io/react/) on Django through [Webpack](https://webpack.github.io/).
 
