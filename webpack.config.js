@@ -2,9 +2,9 @@
  * Created by ddipa on 28/03/2017.
  */
 //require our dependencies
-const path = require('path')
-const webpack = require('webpack')
-const BundleTracker = require('webpack-bundle-tracker')
+const path = require('path');
+const webpack = require('webpack');
+const BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
     //the base directory (absolute path) for resolving the entry option
@@ -16,7 +16,7 @@ module.exports = {
 
     output: {
         //where you want your compiled bundle to be stored
-        path: path.resolve('./curriculum/assets/bundles/'),
+        path: path.resolve('./curriculum/assets/dist/'),
         //naming convention webpack should use for your files
         filename: '[name]-[hash].js',
     },
@@ -29,6 +29,12 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
+        }),
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
         })
     ],
 

@@ -4,8 +4,6 @@
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
-
 
 
 class Hello extends React.Component {
