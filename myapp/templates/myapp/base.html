@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
         <title>{% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
@@ -33,11 +34,10 @@
     </nav>
 {% endblock %}
 {% block container %}
-<div class="container">
-    {% block main %}
-
-    {% endblock %}
-</div>
+    <div class="container">
+        {% block main %}
+        {% endblock %}
+    </div>
 {% endblock %}
 {% block script %}
     <script type="text/js" src="{% static 'js/bootstrap.min.js' %}"></script>
