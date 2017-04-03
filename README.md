@@ -17,10 +17,10 @@ Moreover I added a standard configuration in order to use [React](https://facebo
 
 To use this project, follow these steps:
 
-1. Create your working environment (using [*virtualenv*](https://virtualenv.pypa.io/en/stable/)).
-2. Install Django (`$ pip install django`)
-3. Run (`$ npm install`)
-4. Create a new project using this template
+1. Create a new project using this template
+2. Create your working environment (using [*virtualenv*](https://virtualenv.pypa.io/en/stable/)).
+3. Install Django (`$ pip install django`)
+4. Run (`$ npm install`)
 
 
 ## Creating Your Project
@@ -40,12 +40,12 @@ You can replace ``helloworld`` with your desired project name.
     $ git commit -m "Initial commit"
 
     $ heroku create
+    $ heroku config:add SECRET_VARIABLE=<your secret key>
     $ git push heroku master
 
     $ heroku run python manage.py migrate
 
 See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
-
 ## Using Python 2.7?
 
 Just update `runtime.txt` to `python-2.7.13` (no trailing spaces or newlines!).
